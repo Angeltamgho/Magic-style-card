@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  font-family: "Poppins", "sans-serif";
+  display: block;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #F0EFEA;
+  color: #2A2734;
+}
+
+section .container {
+  max-width: 987px;
+  position: relative;
+}
+@media (max-width: 599px) {
+  section .container {
+    max-width: 55vh;
+  }
+}
+@media (min-width: 600px) {
+  section .container {
+    max-width: 80vh;
+  }
+}
+@media (min-width: 900px) {
+  section .container {
+    max-width: 150vh;
+  }
+}
+section .container .nav-arrow {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 50%;
+}
+section .container .nav-arrow buttton {
+  border-radius: 50%;
+}
+section .container .nav-arrow .prev,
+section .container .nav-arrow .next {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+section .container .nav-arrow .prev:hover,
+section .container .nav-arrow .next:hover {
+  background-color: white;
+}
+section .container .nav-arrow .prev ion-icon,
+section .container .nav-arrow .next ion-icon {
+  color: hsl(200deg, 65%, 72%);
+  font-size: 200%;
+}
+section .container .nav-arrow .prev ion-icon:hover,
+section .container .nav-arrow .next ion-icon:hover {
+  opacity: 0.6;
+}
+section .container .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+}
+section .container .content .slick-dots li button::before {
+  font-size: 1.3rem;
+}
+section .container .content .card {
+  position: relative;
+  margin: 2rem 1.3rem;
+  overflow: hidden;
+  background: white;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+section .container .content .card::before {
+  position: absolute;
+  content: "";
+  height: 45%;
+  width: 100%;
+  background-color: hsl(200deg, 65%, 72%);
+}
+section .container .content .card-content {
+  position: relative;
+  padding: 2rem 2.5rem;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 0.5rem;
+  z-index: 100;
+}
+section .container .content .card-content .image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: hsl(200deg, 65%, 72%);
+}
+section .container .content .card-content .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #F0EFEA;
+}
+section .container .content .card-content .media-icons {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+section .container .content .card-content .media-icons .facebook {
+  background-color: white;
+  -webkit-mask: url("/src/icons/facebook.svg") no-repeat center;
+  mask: url("/src/icons/facebook.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+section .container .content .card-content .media-icons .facebook:hover {
+  opacity: 1;
+}
+section .container .content .card-content .media-icons .github {
+  background-color: white;
+  -webkit-mask: url("/src/icons/github.svg") no-repeat center;
+  mask: url("/src/icons/github.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+section .container .content .card-content .media-icons .github:hover {
+  opacity: 1;
+}
+section .container .content .card-content .media-icons .twitter {
+  background-color: white;
+  -webkit-mask: url("/src/icons/twitter.svg") no-repeat center;
+  mask: url("/src/icons/twitter.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+section .container .content .card-content .media-icons .twitter:hover {
+  opacity: 1;
+}
+section .container .content .card-content .name-profession {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .container .content .card-content .name-profession .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+section .container .content .card-content .name-profession .profession {
+  font-size: 15px;
+  font-weight: 500;
+}
+section .container .content .card-content .rating {
+  display: flex;
+  column-gap: 0.5em;
+}
+section .container .content .card-content .rating .star-fill {
+  background-color: #2A2734;
+  -webkit-mask: url("/src/icons/star-fill.svg") no-repeat center;
+  mask: url("/src/icons/star-fill.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+section .container .content .card-content .rating .star-fill:hover {
+  opacity: 1;
+}
+section .container .content .card-content .rating .star-outline {
+  background-color: #2A2734;
+  -webkit-mask: url("/src/icons/star-outline.svg") no-repeat center;
+  mask: url("/src/icons/star-outline.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+section .container .content .card-content .rating .star-outline:hover {
+  opacity: 1;
+}
+section .container .content .card-content .action {
+  display: flex;
+  gap: 0.5rem;
+  /* CSS */
+}
+section .container .content .card-content .action .button {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+section .container .content .card-content .action .button:hover, section .container .content .card-content .action .button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+section .container .content .card-content .action .button:hover {
+  transform: translateY(-1px);
+}
+section .container .content .card-content .action .button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=style.css.map */
