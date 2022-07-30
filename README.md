@@ -1,0 +1,1 @@
+"# Responsive-slide-auto" 
