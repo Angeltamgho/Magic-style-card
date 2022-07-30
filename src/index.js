@@ -67,6 +67,6 @@ $(function () {
     })
     if (window.matchMedia('(max-width: 600px)').matches) {
         // do functionality on screens smaller than 768px
-        alert('hello tablet');
+//         alert('hello tablet');
     }
 });
