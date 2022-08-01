@@ -17,7 +17,7 @@ body {
 }
 
 section .container {
-  max-width: (978px/((1000*.01) * 1px)) * 1vw;;
+  max-width: (978px/((1000*.01) * 1px)) * 1vw;
  
 
   position: relative;
@@ -31,12 +31,12 @@ section .container {
   section .container {
     max-width: 80vh;
   }
-}
+} */
 @media (min-width: 900px) {
   section .container {
-    max-width: 150vh;
+    max-width: (1140px/((1000*.01) * 1px)) * 1vw;
   }
-} */
+}
 section .container .nav-arrow {
   position: absolute;
   width: 100%;
