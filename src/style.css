@@ -16,12 +16,11 @@ body {
   color: #2A2734;
 }
 
-section .container {
-  max-width: (978px/((1000*.01) * 1px)) * 1vw;
- 
-
+ section .container {
+  max-width: 90vw;
   position: relative;
 }
+
 /* @media (max-width: 599px) {
   section .container {
     max-width: 55vh;
@@ -32,11 +31,11 @@ section .container {
     max-width: 80vh;
   }
 } */
-@media (min-width: 900px) {
+/* @media (min-width: 900px) {
   section .container {
     max-width: (1000px/((1000*.01) * 1px)) * 1vw;
   }
-}
+} */
 section .container .nav-arrow {
   position: absolute;
   width: 100%;
